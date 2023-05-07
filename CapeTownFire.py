@@ -24,7 +24,7 @@ q5 = q5[q5['Count'] > 10]
 q5 = q4.merge(q5[['Sub Category']], on='Sub Category', how='inner')
 
 
-!pip install streamlit
+pip install streamlit
 
 import streamlit as st
 import pandas as pd
@@ -106,7 +106,7 @@ def generate_plot():
 
 st.altair_chart(generate_plot(), use_container_width=True)
 
-!pip install geopandas
+pip install geopandas
 
 import geopandas as gpd
 
